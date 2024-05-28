@@ -1,0 +1,363 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mycart.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>.navbar-nav li.nav-item a.nav-link {
+      color: white;
+    }
+    .nav-item:hover {
+      border: 2px solid white;
+      border-radius: 10px;
+    }
+    nav {
+      background-color: #02132b;
+      padding: 5px;
+      display: flex;
+      height: 70px;
+    }
+    div ul li a {
+      color: white;
+    }
+    .nav-item{
+    
+      color: white;
+    }
+    #logo {
+      height: 50px;
+      width: auto;
+      margin: 6px;
+    }
+    #location {
+      height: 40px;
+      width: 155px;
+      margin: 10px;
+    }
+    .d-flex {
+      width: 550px;
+      height: 60px;
+      margin-left: 5px;
+      margin-right: 20px;
+    }
+    #all {
+      width: 10%;
+      background-color: #e7f1ff;
+    }
+    form {
+      padding: 9px;
+    }
+    .btn-outline-success {
+      background-image: url(images/search.png);
+      width: 10%;
+      color: white;
+    }
+    #cart {
+      height: 60px;
+      width: 60px;
+      margin-right: 9px;
+    }</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <img id="logo" src="images/logo.png" alt="">
+        </li>
+        <li class="nav-item">
+          <img id="location" src="images/location.png" alt="">
+        </li>
+        <li>
+          <form class="d-flex">
+            <input class="form-control" id="all" value="All" />
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success"></button>
+          </form>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            EN
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Hindi</a>
+            <a class="dropdown-item" href="#">Marathi</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Telagu</a>
+          </div>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Hello Sign In <br>Account and list
+          </a>
+          
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Return and order</a>
+        </li>
+        <li class="nav-item">
+          <img id="cart" src="images/cart.png" alt="">
+        </li>
+        
+      </ul>
+  </nav>
+  <div class="nav-below">
+    <ul class="vm">
+      <img src="images/three.png" alt="" />
+      <li>All</li>
+      <li>Fresh</li>
+      <li>MiniTv</li>
+      <li>Sell</li>
+      <li>Seller</li>
+      <li>Mobiles</li>
+      <li>deal</li>
+      <li>Service</li>
+      <li>Electronics</li>
+      <img style="margin-left: 170px" src="images/nav-img.png" alt="" />
+    </ul>
+  </div>
+    <div class="container-fluid">
+        <div class="row mt-4">
+          <div class="col-5">
+            <div>
+              <img
+                src="https://m.media-amazon.com/images/I/61+ZU+cRpLL._SL1500_.jpg"
+                alt=""
+                style="height: 500px"
+              />
+              <img
+                src="https://m.media-amazon.com/images/I/61bjnoADnnL._SL1500_.jpg"
+                alt=""
+                style="height: 500px"
+              />
+            </div>
+          </div>
+    
+          <div class="col-4">
+            <div>
+              <a href="">Visit the SOLETHREADS store</a>
+            </div>
+            <div class="main_text">
+              SOLETHREADS Jazz|Lightweight Comfortable Casual Sneakers Shoes for
+              Women
+            </div>
+            <div class="row">
+              <div class="col-4">
+                5.0
+                <img
+                  class="star-icon"
+                  src="images/st.png"
+                  alt=""
+                />
+                <img
+                  class="star-icon"
+                  src="images/st.png"
+                  alt=""
+                />
+                <img
+                  class="star-icon"
+                  src="images/st.png"
+                  alt=""
+                />
+                <img
+                  class="star-icon"
+                  src="images/st.png"
+                  alt=""
+                />
+                <img
+                  class="star-icon"
+                  src="images/st.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-8">10098 rating</div>
+            </div>
+            <div>
+              <a href="">Search this page</a>
+            </div>
+            <hr />
+            <div class="price">
+              <p>-35%</p>
+              <span>₹1,494</span>
+            </div>
+            <div class="MRP">
+              <img src="./images/mrp.png" alt="" />
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-1">
+                <img src="./images/percent.png" alt="" />
+              </div>
+              <div class="col-9">
+                <h6>Offers</h6>
+              </div>
+              <div class="col-1">
+                <img id="below" src="./images/bellow.png" alt="" />
+              </div>
+            </div>
+    
+            <hr />
+            <div class="delivery_icon">
+              <img src="./images/delivery_icon.png" alt="" />
+            </div>
+            <hr />
+            <div class="size">
+              <h6>Size:</h6>
+              <div class="size_box">
+                5 UK
+                <img id="below" src="./images/bellow.png" alt="" />
+              </div>
+            </div>
+            <div class="size mt-4">
+              <h6>Colour: Pink</h6>
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    class="color_demo"
+                    src="https://m.media-amazon.com/images/I/41aVfRn8q6L._SS47_.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-2">
+                  <img
+                    class="color_demo"
+                    src="https://m.media-amazon.com/images/I/41Cyro3GR+L._SS47_.jpg"
+                  />
+                </div>
+                <div class="col-2">
+                  <img
+                    class="color_demo"
+                    src="https://m.media-amazon.com/images/I/41aVfRn8q6L._SS47_.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <a href="">Size chart</a>
+              <h5 class="mt-1">Product Details</h5>
+              <div class="row">
+                <div class="col-6">
+                  <h6>Material type</h6>
+                  <h6>Closure type</h6>
+                  <h6>Heel type</h6>
+                  <h6>Water resistance level</h6>
+                  <h6>Sole material</h6>
+                  <h6>Style</h6>
+                  <h6>Country of Origin</h6>
+                </div>
+                <div class="col-6">
+                  <div class="type">
+                    <div>Synthetic</div>
+                    <div>Lace-Up</div>
+                    <div>No Heel</div>
+                    <div>Not Water Resistant</div>
+                    <div>Rubber</div>
+                    <div>Sneaker</div>
+                    <div>India</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="about_item">
+              <h3>About this item</h3>
+              <ul>
+                <li>
+                  3D Respimesh for Breathability :- Introducing the future of
+                  footwear: It's like wearing a second skin that breathes and
+                  flexes with you, offering a fit so personalized that you'll
+                  wonder if they were custom-made just for you. They're like the
+                  AC for your feet, only way more stylish!
+                </li>
+                <li>
+                  Water-friendly, Vegan, Premium, Italian Faux Leather :- Embrace
+                  the future of cruelty-free luxury with our buttery-soft,
+                  Italian-inspired faux leather that not only looks good but feels
+                  even better – because being kind to animals never goes out of
+                  style.
+                </li>
+                <li>
+                  Moisture-wicking Ribbed Memory foam Insole for Ultra Comfort :-
+                  Your ticket to walking on clouds! These magical marvels are like
+                  a cozy, cushiony hug for your feet. It's time to upgrade your
+                  shoe game and pamper your tootsies with these memory foam
+                  insoles – because comfort never looked so cool.
+                </li>
+                <li>
+                  Anti-skid Ecotread Recycled Rubber outsoles :- Our revolutionary
+                  outsoles: the ultimate fusion of style and substance! Crafted
+                  from the toughest recycled rubber, these outsoles are
+                  eco-friendly and built to last, so you can stride with
+                  confidence while reducing your carbon footprint.
+                </li>
+              </ul>
+            </div>
+          </div>
+    
+          <div class="col-3">
+            <div class="col-11 mt-3">
+            <h3>₹1,494.</h3>
+            <p>FREE delivery Saturday, 10 February. Order within 19 hrs. Details</p>
+            <div><img id="delevery" src="./images/delivery.png"/></div>
+            <h4 id="stock">In stock</h4>
+            <div class="row">
+                <div class="col-5">
+                  <div>Ship from</div>
+                  <div>Sold by</div>
+                </div>
+                <div class="col-5">
+                    <div>Amazon</div>
+                    <div>COcoblue retails</div>
+                </div>
+              <div class="size1">
+              <h6>Quantity:</h6>
+              <div class="size_box1">
+                1
+                <img id="below" src="./images/bellow.png" alt="" />
+              </div>
+            </div>
+            <div class="buttons mt-3">
+               <button id="addcart">Add to cart</button>
+               <button id="buynow">Buy now</button>
+            </div>
+            <img src="./images/transaction.png" alt="" />
+            
+            <input style="width: 93%;" class="input" type="text" name="" id="" placeholder="Add to wishlist"/>
+    
+            </div>
+            </div>
+    
+            <div class="col-11 mt-3">
+              <div>New(2) from</div>
+              <div class="fulfill">
+                <div style="color: red;">Rs 1,494</div>
+                <img src="./images/fulfill.png" alt="" />
+                <img id="below" src="./images/bellow.png" alt="" />
+              </div>
+              <h6>Delievery</h6>
+            </div>
+    
+            <div class="col-11 mt-3">
+            <h6 class="ml-6">Other Sellers on Amazon</h6>
+            <hr />
+              <button class="btn btn-warning mb-2">Add to cart</button>
+              <div class="fulfill">
+                <div style="color: red;">Rs 1,494</div>
+                <img src="./images/fulfill.png" alt="" />
+                <img id="below" src="./images/bellow.png" alt="" />
+              </div>
+              <h6>Sold by: SOLETHREADS</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

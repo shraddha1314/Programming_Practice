@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register here</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <style>
+      
+      .image img{
+        
+         margin-left: 116px; 
+        
+      }
+      .form {
+        border: 1px solid rgb(197, 197, 197);
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .by_continuing{
+        font-size: 12px;
+      }
+      .continue button{
+        width: 100%;
+      }
+      .continue1 button{
+        border: 2px double rgb(169, 177, 250);
+        border-radius: 5px;
+        width: 100%;
+        
+        
+      }
+      .mobile{
+        display: flex;
+      }
+      #country{
+        width: 25%;
+        margin-right: 15px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container" style="max-width: 29rem;">
+      
+      
+        <div class="image"><img src="images/a1.png" alt="" height="100px"></div>
+        <div class="form">
+          <h2 class="mb-4">Create Account</h2>
+          <div class="mb-2">
+            <label for=""><h6>Your name</h6></label>
+            <input type="text" class="form-control" placeholder="First and Last name" />
+          </div>
+          <div class="mb-2">
+            <label for=""><h6>Mobile number</h6></label>
+            <div class="mobile">
+            <input id="country" value="IN +91" class="form-control"/>
+            <input type="number" class="form-control" />
+            </div>
+          </div>
+          <div class="mb-2">
+            <label for=""><h6>Email(optional)</h6></label>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="mb-2">
+            <label for=""><h6>Password</h6></label>
+            <input type="password" class="form-control" placeholder="At least 6 characters" />
+          </div>
+          
+          
+          <div class="mb-2">
+            <div class="by_continuing"><h6>Passwords must be at least 6 characters.</h6.</div>
+            
+          </div>
+          <br>
+          <div class="mb-2">
+            To verify your number, we will send you a text message with a temporary code. Message and data rates may apply.
+          </div>
+          <br>
+          <div class="mb-2">
+            <div class="continue1">
+            <button class="btn btn-md btn-warning">Verify Mobile number</button>
+          </div>
+          </div>
+          <hr />
+          <div class="mb-2">
+            Already have an account? <a href="sign_in.html">Sign in</a>
+            <br/>
+            <br>By creating an account or logging in, you agree to Amazon’s Conditions of Use and Privacy Policy.
+          </div>
+          
+        </div>
+      </div>
+  </body>
+</html>
