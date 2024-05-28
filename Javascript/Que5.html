@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Given two strings, return true if they are anagrams of each other. For example, Mary is anagram of Army</h1>
+    <script>
+        
+        let str1 = "gram";
+        let str2 = "marg";
+ 
+
+        if (anagram(str1, str2)==true)
+            console.log("Anagram")
+        else
+            console.log("Not an anagram")
+        
+    
+
+        function anagram(str1,str2){
+
+            const arr1=str1.split('').sort();
+            const arr2=str2.split('').sort();
+
+            if(arr1.join()===arr2.join()){
+                return true;
+            }
+
+        }
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Implment stack with functionality: push, pop, isEmpty, isFull, length</h1>
+
+    <Script>
+        
+        let stack=new Array(5);
+        stack=[]
+        console.log("After performing push operation  result is::")
+        op_push();
+        console.log(stack);
+        function op_push(){
+            stack.push(20);
+            stack.push(40);
+            stack.push(60);
+            stack.push(80);
+            stack.push(100);    
+        }
+
+        console.log("After performing pop operation  result is::")
+        op_pop();
+        console.log(stack);
+        function op_pop(){
+            stack.pop(100);
+        }
+
+        
+
+        console.log("After performing isEmpty operation result is::")
+        op_isEmpty();
+        function op_isEmpty(){
+           if(stack.length===0){
+            console.log("Stack is empty")
+           }
+           else{
+            console.log("Stack is not empty")
+           }
+
+        }
+
+        console.log("After performing isFull operation result is::")
+        op_isFull();
+        function op_isFull(){
+           if(stack.length===5){
+            console.log("Stack is full")
+           }
+           else{
+            console.log("Stack is not full")
+           }
+           
+        }
+
+
+        console.log("After performing length operation result is::")
+        op_length();
+        function op_length(){
+           console.log(`Length is ${stack.length}`)
+           
+        }
+
+
+    </Script>
+    
+</body>
+</html>

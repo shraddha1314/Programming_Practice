@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Given year, check if it is leap year.</h1>
+
+    <script>
+        function leapYear(year) {
+
+
+            if ((0 == year % 4) && (0 != year % 100) || (0 == year % 400)) {
+                console.log(year + ' is a leap year');
+            } else {
+                console.log(year + ' is not a leap year');
+            }
+        }
+
+
+    const year = 2034;
+    leapYear(year);
+    
+    </script>
+</body>
+</html>

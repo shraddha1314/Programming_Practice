@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Write a function to sort alphabates in a string in both orders.</h1>
+    <script>
+
+        function sort_alphabate(str){
+            let arr=str.split('').sort().join('');
+            console.log(`Accending order: ${arr}`);
+
+            let arr2=str.split('').sort().reverse().join('');
+            console.log(`Decending order: ${arr2}`);
+        }
+
+        let str="welcome";
+        sort_alphabate(str);
+        
+    </script>
+</body>
+</html>

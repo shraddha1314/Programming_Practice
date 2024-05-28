@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Write a function to check amstrong number.</h1>
+
+    <script>
+        let number=153,sum=0;
+        var n=0;
+        var temp1 = number;
+        
+        while (temp1 > 0) {
+            n=n+1;
+            temp1 = parseInt(temp1 / 10); 
+        }
+        console.log(n)
+
+        let temp2 = number;
+        while (temp2 > 0) {
+            let remainder = parseInt(temp2 % 10);
+            sum=sum+Math.pow(remainder,n);
+            temp2 = parseInt(temp2 / 10); 
+        }
+        if (sum == number) {
+            console.log(`${number} is an Armstrong number`);
+        }
+        else {
+            console.log(`${number} is not an Armstrong number.`);
+        }
+    </script>
+    
+</body>
+</html>

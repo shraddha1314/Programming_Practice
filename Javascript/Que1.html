@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let str = "Welcome to javascript";
+        reverseWords(str);
+        
+
+        function reverseWords(str) {
+            
+            let words=str.split(' ');
+            let arr=[];
+            let revWords=[]
+            for(let word of words){
+                rev=''
+                for(let i=0;i<word.length;i++){
+                     rev=word.charAt(i)+rev;
+                }
+                revWords.push(rev)
+                
+            }
+            
+            console.log(revWords.join(" "))
+            
+
+        }
+ 
+
+    </script>
+</body>
+</html>

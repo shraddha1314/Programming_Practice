@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Check if given number is :
+        <ul>
+            <li>prime,even,odd,number,alphabate,integer,decimal.</li>
+            
+        </ul>
+        
+    </h1>
+
+    <script>
+        
+
+
+        //check prime
+        let num=12;
+        let checkprime=prime(num);
+        if(checkprime==true){
+            console.log("Prime")
+        }
+        else{
+            console.log("Not Prime")
+        }
+
+        
+        function prime(num){
+            if(num<=1){
+                return false;
+            }
+            for(let i=2;i<num/2;i++){
+                if(num%i==0){
+                    return false;
+                }
+            }
+            return true;
+        }
+        
+
+        //Check odd even number
+        odd_even(num);
+
+        function odd_even(num){
+            if(num%2==0)
+            {
+                console.log("even");
+            }
+            else{
+                console.log("odd");
+            }
+        }
+
+
+        //check number
+
+        let num2="a";
+        numberCheck(num2);
+
+        function numberCheck(num2){
+            if(typeof (num2)==='number'){
+                console.log("Given input is number.")
+            }
+            else
+            {
+                console.log("Given input not number.")
+            }
+        }
+       
+
+
+        //check alphabate
+        let alphabate='a';
+        alphabateCheck(alphabate);
+
+        function alphabateCheck(alphabate){
+            if(typeof alphabate==='string' && alphabate.length===1){
+                console.log("Given input is alphabate.")
+            }
+            else
+            {
+                console.log("Given input not alphabate.")
+            }
+
+        }
+        
+
+
+        //check Integer
+        let num3=12;
+        numberCheck(num3);
+
+        function numberCheck(num3){
+            if(Number.isInteger(num3)==true){
+                console.log("Given input is integer.")
+            }
+            else
+            {
+                console.log("Given input not integer.")
+            }
+        }
+
+
+
+        //check decimal
+        let decimalnum=2;
+        decimalcheck(decimalnum);
+
+        function decimalcheck(decimalnum){
+            if(Number.isFinite(decimalnum) && !Number.isInteger(decimalnum)){
+                console.log("Given input is decimal.")
+            }
+            else
+            {
+                console.log("Given input not decimal.")
+            }
+        }
+
+
+
+        
+    </script>
+</body>
+</html>

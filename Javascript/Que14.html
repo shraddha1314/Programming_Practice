@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Write a function to print fibonacci series using recursion.</h1>
+    <script>
+        function fibonanci(num1,num2,range){
+            while(range>0){
+                var num3=num1+num2;
+                num1=num2;
+                num2=num3;
+                console.log(num3);
+                range=range-1;
+                fibonanci(num1,num2)
+            }
+        }
+
+        let num1=0,num2=1;
+        console.log(num1);
+        console.log(num2);
+        let range=prompt("enter the range:");
+        fibonanci(num1,num2,range-2);
+
+
+    </script>
+</body>
+</html>
